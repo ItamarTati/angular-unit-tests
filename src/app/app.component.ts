@@ -9,5 +9,14 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angular-unit-tests';
-}
+  count: number = 0;
+
+  increment() {
+    this.count++;
+  }
+
+  decrement() {
+    if (this.count > 0) {
+      this.count--;
+    }
+  }}
